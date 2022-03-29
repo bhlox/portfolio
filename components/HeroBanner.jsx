@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GoTools } from "react-icons/go";
 
+const phrase1 = ["am a", "build"];
+const phrase2 = ["web developer", "projects"];
+// const phraseIcon = []
+
 function HeroBanner() {
+  const [index, setIndex] = useState(0);
+  // const [phrase, setPhrase] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => {
+        if (prev === phrase1.length - 1) {
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="flex">
-      <div>
-        <h2 className="text-5xl font-medium">Hello!</h2>
-        <h3 className="flex items-end text-4xl gap-x-4">
-          I am <span className="text-6xl italic font-bold">Kurk</span>
+    <section className="flex mt-16 pb-16">
+      <div className="space-y-4">
+        <h2 className="text-6xl font-medium">Hello!</h2>
+        <h3 className="flex items-end text-6xl gap-x-4 ">
+          I am <span className="text-7xl italic font-bold">Kurk</span>
         </h3>
-        <h3>
-          I&apos;m a{" "}
-          <span className="underline text-5xl font-medium">web developer</span>
-          <GoTools />
+        <h3 className="text-6xl flex flex-col md:flex-row gap-x-2 md:items-center">
+          I {phrase1[index]}
+          <span className="underline text-7xl font-medium">
+            {phrase2[index]}
+          </span>
+          {/* <GoTools className="hidden sm:inline" /> */}
         </h3>
       </div>
     </section>

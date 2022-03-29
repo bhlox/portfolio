@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  body {
-    @apply bg-slate-800 text-gray-200;
+@layer base {
+  @font-face {
+    font-family: "Caveat";
+    src: url("/fonts/Caveat-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+  html {
+    @apply scroll-smooth scroll-pt-20;
   }
 }
+
+/* @layer components {
+  body {
+    @apply dark:bg-slate-800 dark:text-gray-200;
+  }
+} */
