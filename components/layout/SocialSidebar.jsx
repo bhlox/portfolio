@@ -34,7 +34,7 @@ function SocialSidebar() {
         </div>
         <div className="w-1/3 md:w-full flex flex-col justify-center items-center -space-y-2 group">
           <a
-            href="linkedin.com/in/kurk-villanueva-02779216b"
+            href="https://www.linkedin.com/in/kurk-villanueva-02779216b"
             target="_blank"
             rel="noreferrer"
           >

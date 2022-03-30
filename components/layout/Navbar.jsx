@@ -47,9 +47,11 @@ function Navbar() {
               About me
             </a>
             <a
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setShowSide(false)}
-              href=""
-              className="text-3xl font-light opacity-75 hover:opacity-100 outline outline-2 px-2 py-1 rounded"
+              href="https://drive.google.com/file/d/1ndCssHuoY5F7hus1s4lOUdCpJPfbUkke/view?usp=sharing"
+              className="text-3xl font-light opacity-75 hover:opacity-100 outline outline-2 px-2 py-1 rounded hover:scale-110 hover:-translate-x-1 transition-transform duration-300"
             >
               Resume
             </a>
