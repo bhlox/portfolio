@@ -33,7 +33,11 @@ function SocialSidebar() {
           </span>
         </div>
         <div className="w-1/3 md:w-full flex flex-col justify-center items-center -space-y-2 group">
-          <a href="" target="_blank" rel="noreferrer">
+          <a
+            href="linkedin.com/in/kurk-villanueva-02779216b"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin className="text-blue-600 hover:scale-110 hover:-translate-y-2 transition-all duration-300" />
           </a>
           <span className="md:absolute md:left-0 group-hover:md:left-16 md:bg-gray-300 dark:md:bg-slate-700 md:p-2 md:scale-0 group-hover:scale-100 text-xl dark:text-gray-200 text-slate-800 tracking-widest transition-all duration-300">
