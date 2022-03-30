@@ -6,8 +6,6 @@ import SocialSidebar from "./SocialSidebar";
 function Layout({ children }) {
   const { darkMode } = useDarkContext();
 
-  console.log(darkMode);
-
   return (
     <div className={`${darkMode ? "dark" : ""} overflow-hidden relative `}>
       <Navbar />
