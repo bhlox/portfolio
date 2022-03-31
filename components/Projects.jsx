@@ -28,7 +28,7 @@ const projectsData = [
     gif: "https://media.giphy.com/media/L127SrYtwYnez8kyNP/giphy.gif",
     title: "Readis Blogs",
     desc: 'A blog platform that has social media like features. In blog format, users can post any thought they want. It has features of what is called a "CRUD" app. ',
-    stack: ["tailwindCSS", "NextJS", "Node", "firebase", "React Redux"],
+    stack: ["tailwindCSS", "NextJS", "Node", "firebase", "Redux"],
     url: "https://readdis-blogs.vercel.app/",
     source: "https://github.com/bhlox/nextjs-practice",
     hint: {
