@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { GoTools } from "react-icons/go";
 
-const phrase1 = ["am a", "build"];
-const phrase2 = ["web developer", "projects"];
-// const phraseIcon = []
+const phrase1 = ["am a", "build", "love exploring"];
+const phrase2 = ["web developer", "projects", "new things"];
 
 function HeroBanner() {
   const [index, setIndex] = useState(0);
