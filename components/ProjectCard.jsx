@@ -11,7 +11,7 @@ function ProjectCard({ title, desc, stack, photo, gif, url, source, hint }) {
           setIsHovered(false);
         }, 400)
       }
-      className="p-4 sm:w-1/2 lg:w-1/3"
+      className="p-4 w-full sm:w-1/2 lg:w-1/3"
     >
       <div
         onMouseEnter={() =>
@@ -71,7 +71,7 @@ function ProjectCard({ title, desc, stack, photo, gif, url, source, hint }) {
             )}
           </div>
           <p className="text-xl">{desc}</p>
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
             {stack.map((entry) => (
               <span
                 key={Math.random() * 24343}
