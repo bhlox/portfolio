@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
 
 const projectsData = [
@@ -40,8 +41,14 @@ const projectsData = [
 ];
 
 function Projects() {
+  const [ref, inView, entry] = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    console.log(entry);
+  }, [inView]);
+
   return (
-    <section id="projects" className="space-y-6">
+    <section ref={ref} id="projects" className="space-y-6">
       <h2 className="text-5xl font-bold">
         Featured <span className="underline font-medium "> Projects</span>
       </h2>

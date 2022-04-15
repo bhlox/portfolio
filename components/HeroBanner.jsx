@@ -6,7 +6,6 @@ const phrase2 = ["web developer", "projects", "new things"];
 
 function HeroBanner() {
   const [index, setIndex] = useState(0);
-  // const [phrase, setPhrase] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
