@@ -41,11 +41,13 @@ const projectsData = [
 ];
 
 function Projects() {
-  const [ref, inView, entry] = useInView({ threshold: 0.2 });
+  const [ref, inView, entry] = useInView({ threshold: 0.8 });
 
-  useEffect(() => {
-    console.log(entry);
-  }, [inView]);
+  // console.log(inView);
+
+  // useEffect(() => {
+  //   console.log(entry);
+  // }, [inView]);
 
   return (
     <section ref={ref} id="projects" className="space-y-6">

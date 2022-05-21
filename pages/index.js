@@ -3,6 +3,7 @@ import Image from "next/image";
 import AboutMe from "../components/AboutMe";
 import HeroBanner from "../components/HeroBanner";
 import Projects from "../components/Projects";
+import StaticCollection from "../components/StaticCollection";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 
       <HeroBanner />
       <Projects />
+      <StaticCollection />
       <AboutMe />
     </>
   );

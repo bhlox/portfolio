@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { GoTools } from "react-icons/go";
+import { useInView } from "react-intersection-observer";
 
 const phrase1 = ["am a", "build", "love exploring"];
 const phrase2 = ["web developer", "projects", "new things"];
 
 function HeroBanner() {
   const [index, setIndex] = useState(0);
+
+  const { ref, inView, entry } = useInView({ threshold: 1 });
+
+  console.log(inView);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,7 +26,7 @@ function HeroBanner() {
   }, []);
 
   return (
-    <section className="flex mt-16 pb-16">
+    <section ref={ref} className="flex mt-16 pb-16">
       <div className="space-y-4">
         <h2 className="text-6xl font-medium">Hello!</h2>
         <h3 className="flex items-end text-6xl gap-x-4 ">
