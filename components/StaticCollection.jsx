@@ -21,9 +21,13 @@ function StaticCollection() {
     <section className="space-y-12">
       <div className="space-y-4">
         <h2 className="text-5xl font-bold">My static sites collection</h2>
-        <p className="text-xl font-light">
-          All templates have a tech stack of NextJS, tailwind, RTK and SSR
+        <p className="text-bold text-2xl ">
+          All templates have a tech stack of NextJS, tailwind, RTK and SSR.
         </p>
+        <span className="text-xl">
+          Only template 1 has built in functions of an ecommerce app integrated
+          with MongoDB.
+        </span>
       </div>
 
       <div className="space-y-4">
